@@ -1,12 +1,10 @@
 package PageObjects;
 
-import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 
 public class VerifyPageObject
@@ -37,7 +35,7 @@ public class VerifyPageObject
     	searchField.sendKeys(Keys.ENTER);
     	String title= driver.getTitle();
  	   System.out.println(title);
- 	   Assert.assertEquals("Google", "Google");
+ 	   //Assert.assertEquals("Google", "Google");
     }
     public void titleCheck()
     {

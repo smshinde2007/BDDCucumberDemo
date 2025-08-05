@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base
 {
-	//public static WebDriver driver;
+	//public static WebDriver driver; // removed this for threadLocal
 	 private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
 	    public static WebDriver getDriver() {
