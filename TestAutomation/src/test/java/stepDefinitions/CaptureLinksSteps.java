@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import PageObjects.CaptureLinksObject;
 import TestBase.Base;
+import TestBase.DriverLaunch;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
@@ -11,7 +12,7 @@ public class CaptureLinksSteps
 	@Given("open webSite")
 	public void open_web_site() {
 	   
-		capture= new CaptureLinksObject(Base.getDriver());
+		capture= new CaptureLinksObject(DriverLaunch.getDriver());
 		capture.open();
 	}
 	@And("get all links in list")

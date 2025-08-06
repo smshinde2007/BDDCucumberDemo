@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import PageObjects.VerifyPageObject;
 import TestBase.Base;
+import TestBase.DriverLaunch;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,7 +17,7 @@ public class VerifyPageSteps
 	@Given("open a page URL")
 	public void open_a_page_url() 
 	{
-		VerifyPage = new VerifyPageObject(Base.getDriver());
+		VerifyPage = new VerifyPageObject(DriverLaunch.getDriver());
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
